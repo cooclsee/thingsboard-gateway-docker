@@ -9,7 +9,7 @@ Thingsboard IoT Gateway documentation is hosted on [thingsboard.io](https://thin
 ```bash
 docker run \
   --name tb-gateway \
-  -e GATEWAY_HOST={YOUR_TB_HOST} \
-  -e GATEWAY_ACCESS_TOKEN={YOURT_TB_GATEWAY_TOKEN} \
+  -e GATEWAY_HOST=YOUR_TB_HOST \
+  -e GATEWAY_ACCESS_TOKEN=YOURT_TB_GATEWAY_TOKEN \
   cooclsee/tb-gateway
 ```
