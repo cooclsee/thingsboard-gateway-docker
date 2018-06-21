@@ -5,7 +5,7 @@ printenv | awk -F "=" '{print "export " $1 "='\''" $2 "'\''"}' >> /usr/share/tb-
 
 cat /usr/share/tb-gateway/conf/tb-gateway.conf
 
-echo "Starting 'TB-gateway' service..."
+echo "\033[32mStarting 'TB-gateway' service...\033[0m"
 service tb-gateway start
 
 # Wait until log file is created
