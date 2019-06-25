@@ -10,6 +10,7 @@ COPY run.sh /run.sh
 
 RUN wget https://github.com/thingsboard/thingsboard-gateway/releases/download/$GITHUB_TAG/tb-gateway-$VERSION.deb -O tb-gateway.deb \
     && dpkg -i tb-gateway.deb \
+    && rm -y tb-gateway.deb \
     && chmod +x /run.sh
 
 VOLUME [ "/usr/share/tb-gateway/conf" ]
